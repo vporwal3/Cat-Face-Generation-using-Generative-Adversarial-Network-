@@ -7,7 +7,7 @@ def discriminator_loss(logits_real, logits_fake):
     """
     Computes the discriminator loss.
     
-    You should use the stable torch.nn.functional.binary_cross_entropy_with_logits 
+    We use the stable torch.nn.functional.binary_cross_entropy_with_logits 
     loss rather than using a separate softmax function followed by the binary cross
     entropy loss.
     
@@ -30,7 +30,7 @@ def generator_loss(logits_fake):
     """
     Computes the generator loss.
     
-    You should use the stable torch.nn.functional.binary_cross_entropy_with_logits 
+    We use the stable torch.nn.functional.binary_cross_entropy_with_logits 
     loss rather than using a separate softmax function followed by the binary cross
     entropy loss.
 
