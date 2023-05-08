@@ -24,7 +24,7 @@ def discriminator_loss(logits_real, logits_fake):
     loss_fake = bce_loss(logits_fake,fake_labels)
     
     
-    return (loss_real+loss_fake)/2
+    return (loss_real+loss_fake)
 
 def generator_loss(logits_fake):
     """
